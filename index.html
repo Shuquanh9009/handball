@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Telecom Handball</title>
+    <style>
+        header {
+            color: white;
+            border: 10px solid clear;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            background-image: linear-gradient(-90deg, red, gold);
+            font-size: 30px;
+        }
+
+  
+        #coach {
+            background-image: url("coach.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 500px;
+            display: inline-block;
+            position: absolute;
+            left: 900px;
+            right: 0px;
+            top: 300px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 10px 10px 5px skyblue;
+            animation: coach 6s ease-out 0s 1 normal;
+
+        }
+
+        @keyframes coach {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            background-image: url("team.JPG");
+            background-size:cover;
+            background-repeat: no-repeat;
+            bottom:500px;
+            height:120%;            
+        }
+        #ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            left: 900px;
+            right: 0px;
+            top: 800px;
+            margin: auto;
+            text-align:center;
+            color:red;
+            animation-name: handball;
+            animation-duration: 3s;
+            transition-property: width, height;
+            transition-duration: 2s;
+            transform:translate(0px,100px);;
+
+        }
+        #ball:hover{
+             width: 300px;
+            height: 300px;
+        }
+
+        @keyframes handball {
+            0% {
+                background-color: blue;
+                ;
+                down: 100px;
+                top: 500px;
+            }
+            25% {
+                background-color: blue;
+                top: 100px;
+                down: 500px;
+            }
+            50% {
+                background-color: blue;
+                down: 100px;
+                top: 500px;
+            }
+            75% {
+                background-color: blue;
+                top: 100px;
+                down: 500px;
+            }
+            100% {
+                background-color: blue;
+                ;
+                down: 100px;
+                top: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="ball">21</div>
+    <header>
+        <h1> Telecom Handball</h1>
+    </header>
+
+    <div id="coach">Coach Lamicella</div>
+    <div id="group"></div>
+
+
+</body>
+<section></section>
+
+</html>
