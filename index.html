@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Telecom Handball</title>
     <style>
+    /* create a header on top of the page with a mix of red and gold background.
+       White color title
+       clear solid border
+       making it center and covers across the page horizontally*/
+        
         header {
             color: white;
             border: 10px solid clear;
@@ -21,7 +26,10 @@
             font-size: 30px;
         }
 
-  
+  /*created a box for the pic of coach lamicella
+  seted to location to the right side of the page
+  animation of making the pic appearing slowing in a course of 6 sec
+  blue shadow effect around his pic frame*/
         #coach {
             background-image: url("coach.jpg");
             background-size: cover;
@@ -38,7 +46,7 @@
             animation: coach 6s ease-out 0s 1 normal;
 
         }
-
+/* set the animation function for the appearance of coach's pic*/
         @keyframes coach {
             0% {
                 opacity: 0;
@@ -50,7 +58,7 @@
                 opacity: 1;
             }
         }
-
+/* set the page with the background of the team photo*/
         body {
             background-image: url("team.JPG");
             background-size:cover;
@@ -58,6 +66,11 @@
             bottom:500px;
             height:120%;            
         }
+        /*created a blue circle representing the handball with the logo red 21 on it
+        set to location to the right of the page and under the coach's pic
+        has a transition of moving up and down then relocate/transform under the coach's pic
+        instead on the middle of the page
+        */
         #ball {
             width: 100px;
             height: 100px;
@@ -77,11 +90,13 @@
             transform:translate(0px,100px);;
 
         }
+        /*when the mousepointer hovers over the blue ball, it will increases the ball's size*/
         #ball:hover{
              width: 300px;
             height: 300px;
         }
-
+/* sets the animation/movement of the blueball going up and down during which part of the
+course of time that's been set*/
         @keyframes handball {
             0% {
                 background-color: blue;
@@ -116,13 +131,13 @@
 
 <body>
     
-    <div id="ball">21</div>
+    
     <header>
-        <h1> Telecom Handball</h1>
+        <h1> Telecom Handball</h1> 
     </header>
-
+    <div id="ball">21</div>
     <div id="coach">Coach Lamicella</div>
-    <div id="group"></div>
+    
 
 
 </body>
